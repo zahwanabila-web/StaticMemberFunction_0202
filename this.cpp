@@ -10,3 +10,6 @@ public:
     }
 };
 
+int main(){
+    buku bukunya;
+}
