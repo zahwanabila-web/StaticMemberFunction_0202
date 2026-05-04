@@ -15,6 +15,10 @@ public:
         nim = pnim;
     };
 
+    static int getNim() {
+        return nim;
+    }
+
     Mahasiswa(string pnama) :nama(pnama) {
         setID();
     };
@@ -37,7 +41,7 @@ int main(){
     Mahasiswa mhs1("Sri Dadi");
     Mahasiswa mhs2("Budi Jatmiko");
 
-    Mahasiswa ::setNim(9);
+    Mahasiswa::setNim(9);
     Mahasiswa mhs3("Andi Janu");
     Mahasiswa mhs4("Joko Wahono");
 
@@ -46,8 +50,7 @@ int main(){
     mhs3.printALL();
     mhs4.printALL();
 
-
-
-    
+    cout << "Akses dari luar object = " << Mahasiswa::getNim() << endl;
+    system("pause");
 
 }
